@@ -30,7 +30,7 @@ type
 
 proc newAudioAnalyzer*(waveletType: WaveletType): AudioAnalyzer =
   ## Create new audio analyzer with specified wavelet
-  result = AudioAnalyzer(dwt: newDWT(waveletType))
+  result = AudioAnalyzer(dwt: DWT(waveletType: waveletType))
 
 proc applyWindow*(samples: seq[float64], windowType: WindowType): seq[float64] =
   ## Apply windowing function to audio samples

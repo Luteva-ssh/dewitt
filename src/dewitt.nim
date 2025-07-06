@@ -4,7 +4,7 @@
 ## optimized for audio signal processing and analysis.
 
 import math, sequtils, algorithm
-import wavelet_audio/[wavelets, dwt_core, audio_utils]
+import wavelet/[wavelets, dwt_core, audio_utils]
 
 export wavelets, dwt_core, audio_utils
 
