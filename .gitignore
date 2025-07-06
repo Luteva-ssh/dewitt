@@ -1,0 +1,4 @@
+# Ignore binary output directory
+bin/
+# Ignore local nimble paths
+nimble.paths
