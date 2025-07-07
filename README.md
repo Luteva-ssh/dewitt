@@ -1,4 +1,3 @@
-# README.md
 # Wavelet Audio Analysis
 
 A comprehensive Nim implementation of Discrete Wavelet Transform (DWT) for audio signal processing and analysis.
@@ -108,5 +107,5 @@ MIT License - see LICENSE file for details.
 
 ## Contributing
 
-Contributions welcome! Please ensure tests pass and add benchmarks for new features.
+Contributions welcome! 
 
