@@ -12,7 +12,8 @@ proc benchmarkDWT() =
   
   for waveletType in wavelets:
     echo fmt"\n{waveletType} Wavelet:"
-    let dwt = newDWT(waveletType)
+    let dwt = DWT(waveletType: waveletType)
+    dwt.initializeWavelet()
     
     for size in sizes:
       # Generate test signal
@@ -39,7 +40,8 @@ proc benchmarkMultiLevel() =
   
   let size = 4096
   let levels = @[3, 4, 5, 6, 7]
-  let dwt = newDWT(WaveletType.Daubechies4)
+  let dwt = DWT(waveletType: WaveletType.Daubechies4)
+  dwt.initializeWavelet()
   
   # Generate test signal
   var signal = newSeq[float64](size)

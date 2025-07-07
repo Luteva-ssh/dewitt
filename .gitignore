@@ -2,3 +2,6 @@
 bin/
 # Ignore local nimble paths
 nimble.paths
+
+.vscode/
+docs/
